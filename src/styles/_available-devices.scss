@@ -1,0 +1,32 @@
+.available-devices{
+    padding: 5.6vw;
+    
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__list{
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr); //o primeiro número representa o número de vezes que será repetido e o segundo qual número será repetido
+
+        @media(max-width:768px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item{
+            text-align: center;
+
+            h4{
+                margin:20px auto 24px;
+            }
+            img{
+                max-width: 100%;
+            }
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+}
